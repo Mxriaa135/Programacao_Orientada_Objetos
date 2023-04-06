@@ -6,7 +6,7 @@ public class Main {
         int somatorioSalario = 0;
         int somatorioFilhos = 0;
         int maiorSalario = 0;
-        for(int contador = 0; contador < 3; contador++) {
+        for(int contador = 0; contador < 20; contador++) {
             Scanner leitor = new Scanner(System.in);
             System.out.println("Digite o salário do " + (contador + 1) + "º cidadão: ");
             int salario = leitor.nextInt();
@@ -23,8 +23,8 @@ public class Main {
                 maiorSalario = salario;
             }
          }
-        int mediaSalario = somatorioSalario/3;
-        int mediaFilhos = somatorioFilhos/3;
+        int mediaSalario = somatorioSalario/20;
+        int mediaFilhos = somatorioFilhos/20;
         System.out.println("A média salarial é R$:" + mediaSalario);
         System.out.println("Média do número de filhos por habitante: " + mediaFilhos);
         System.out.println("Maior salário, R$:" + maiorSalario);
